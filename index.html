@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="joke-card">
+            <h1>😂 Joke Generator</h1>
+            
+            <div class="controls">
+                <select id="categorySelect" class="select">
+                    <option value="">Any Category</option>
+                    <option value="general">General</option>
+                    <option value="programming">Programming</option>
+                    <option value="knock-knock">Knock Knock</option>
+                </select>
+                
+                <label class="checkbox-label">
+                    <input type="checkbox" id="nsfwToggle" checked>
+                    <span>Include NSFW</span>
+                </label>
+            </div>
+
+            <div id="jokeDisplay" class="joke-display">
+                <p class="placeholder">Click "Get Joke" to start laughing!</p>
+            </div>
+
+            <div class="button-group">
+                <button id="getJokeBtn" class="btn btn-primary">Get Joke</button>
+                <button id="copyBtn" class="btn btn-secondary" style="display:none;">Copy to Clipboard</button>
+            </div>
+
+            <div id="loadingSpinner" class="spinner" style="display:none;"></div>
+            
+            <div id="errorMessage" class="error-message" style="display:none;"></div>
+        </div>
+
+        <div class="info-section">
+            <h3>How it works:</h3>
+            <ul>
+                <li>Fetches jokes from the JokeAPI</li>
+                <li>Supports multiple categories</li>
+                <li>Filter NSFW content</li>
+                <li>Copy jokes to clipboard</li>
+                <li>Responsive design</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
