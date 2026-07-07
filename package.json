@@ -1,0 +1,24 @@
+{
+  "name": "joke-generator",
+  "version": "1.0.0",
+  "description": "Random joke generator using JokeAPI v2",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "http-server -p 8000"
+  },
+  "keywords": [
+    "joke",
+    "generator",
+    "api",
+    "random",
+    "humor",
+    "javascript",
+    "vanilla-js"
+  ],
+  "author": "Djake64",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
